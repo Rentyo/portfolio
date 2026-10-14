@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="백엔드 개발자 포트폴리오 — 프로젝트, 개발 이야기, 연락처">
+  <meta name="theme-color" content="#f8f7f2">
+  <title>Backend Developer · Portfolio</title>
+  <link rel="stylesheet" href="site.css">
+  <script src="project-data.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">본문으로 이동</a>
+  <header class="header">
+    <a class="logo" href="#home" aria-label="첫 화면">dev<span>folio.</span></a>
+    <nav aria-label="주 메뉴"><a href="#home" class="active">Home</a><a href="#projects">Projects</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+    <button class="theme-toggle" id="theme-toggle" aria-label="다크 모드로 전환" aria-pressed="false">☼</button>
+  </header>
+  <main id="main-content">
+    <section class="hero" id="home">
+      <div class="hero-top"><span class="eyebrow"><i></i> BACKEND DEVELOPER</span><span class="edition">PORTFOLIO / 2026</span></div>
+      <div class="greeting"><h1>데이터를 연결하고,<br>안정적인 서비스를 만듭니다.</h1></div>
+      <div class="hero-bottom">
+        <div class="hero-copy"><p class="intro">백엔드 개발자 포트폴리오</p><p class="muted">복잡한 문제를 단순한 구조로 풀고,<br>서비스가 매끄럽게 이어지도록 고민합니다.</p><a class="text-link" href="#projects">프로젝트 살펴보기 <span>↗</span></a><div class="hero-strengths"><span>데이터 설계</span><span>성능 최적화</span><span>실시간 시스템</span></div><div class="hero-shortcuts"><a href="#about">About me <span>↗</span></a><a href="#contact">Get in touch <span>↗</span></a></div></div>
+      </div>
+      <div class="section-foot"><span>SCROLL TO EXPLORE</span><a href="#projects" aria-label="프로젝트로 이동">↓</a><span>BUILD THINGS THAT LAST.</span></div>
+    </section>
+    <section class="projects" id="projects">
+      <div class="section-heading"><div><span class="eyebrow">01 / SELECTED WORK</span><h2>작은 고민에서,<br>단단한 서비스로<span>.</span></h2></div><div class="project-controls"><p>설계와 문제 해결의 기록</p><div><button id="previous" aria-label="이전 프로젝트">←</button><button id="next" aria-label="다음 프로젝트">→</button></div></div></div>
+      <p class="demo-note">실시간 통신, 데이터 최적화, AI 검색으로 풀어낸 네 가지 프로젝트</p>
+      <div class="project-track" id="project-track" tabindex="0" aria-label="프로젝트 카드 목록, 좌우 화살표 키로 이동">
+        <article class="project-card peach"><div class="card-visual thumbnail-visual"><img src="assets/planit-thumbnail.png" alt="Planit 메인페이지" width="1153" height="576" loading="lazy"></div><div class="card-body"><span class="small-label">공통 프로젝트 · 01</span><h3>Planit</h3><p>실시간 교육봉사 플랫폼</p><p class="card-meta">2026.02 ~ 2026.03 · 6명</p><div class="tags"><span>Java</span><span>Spring Boot</span><span>React</span><span>MySQL</span><span>Redis</span><span>WebSocket</span><span>WebRTC</span><span>AWS EC2</span></div><button class="detail-link" data-project="commerce">상세 보기 <span>↗</span></button></div></article>
+        <article class="project-card lavender"><div class="card-visual thumbnail-visual"><img src="assets/iroun-thumbnail.png" alt="이로운 인지 훈련 게임 화면" width="857" height="530" loading="lazy"></div><div class="card-body"><span class="small-label">자율 프로젝트 · 02</span><h3>이로운</h3><p>아동 인지 훈련 서비스</p><p class="card-meta">2026.04 ~ 2026.05 · 6명</p><div class="tags"><span>Java</span><span>Spring Boot</span><span>React</span><span>PostgreSQL</span><span>Redis</span><span>Python</span><span>FastAPI</span><span>AWS EC2</span></div><button class="detail-link" data-project="cache">설계 이야기 보기 <span>↗</span></button></div></article>
+        <article class="project-card blue"><div class="card-visual thumbnail-visual"><img src="assets/hosu-thumbnail.png" alt="HOSU 음식점 검색 화면" width="1150" height="612" loading="lazy"></div><div class="card-body"><span class="small-label">관통 프로젝트 · 03</span><h3>HOSU</h3><p>메뉴 리뷰 기반 SNS 서비스</p><p class="card-meta">2025.11.07 ~ 2025.12.26 · 2명</p><div class="tags"><span>Java</span><span>Spring Boot</span><span>MyBatis</span><span>MySQL</span><span>Vue 3</span><span>JWT</span><span>AWS EC2</span></div><button class="detail-link" data-project="events">설계 이야기 보기 <span>↗</span></button></div></article>
+      <article class="project-card"><div class="card-visual thumbnail-visual"><img src="assets/hear4you-demo.png" alt="Hear4You 아이 울음소리 감지 테스트와 라즈베리파이 연결 모습" loading="lazy"></div><div class="card-body"><span class="small-label">개인 프로젝트 · 04</span><h3>Hear4You</h3><p>청각장애 보호자를 위한 아이 울음소리 감지·분류</p><p class="card-meta">2024.09 ~ 2024.12 · 1명</p><div class="tags"><span>Android (Java)</span><span>Python</span><span>AST</span><span>Raspberry Pi</span><span>Bluetooth</span></div><button class="detail-link" data-project="hear4you">설계 이야기 보기 <span>↗</span></button></div></article></div>
+      <div class="track-footer"><span id="project-count" aria-live="polite">01 / 04</span><span>SWIPE OR USE THE ARROWS ⟷</span></div>
+    </section>
+    <section class="about competencies" id="about">
+  <div class="competency-heading"><span class="eyebrow">CORE COMPETENCIES / 핵심 역량</span><h2>데이터 흐름을 설계하고,<br>병목을 찾아 개선합니다.</h2><p>Backend Development · Performance Optimization · System Integration</p></div>
+  <div class="competency-grid">
+    <article class="competency-card">
+      <div class="competency-visual image-visual"><img class="about-image-light" src="assets/about-backend-light.png" alt="Web에서 Spring Boot API를 거쳐 DBMS로 이어지는 백엔드 구조" loading="lazy"><img class="about-image-dark" src="assets/about-backend-dark.png" alt="Web에서 Spring Boot API를 거쳐 DBMS로 이어지는 백엔드 구조" loading="lazy"></div>
+      <div class="competency-copy"><span class="small-label">01 / BACKEND DESIGN</span><h3>유지보수를 고려한 백엔드 설계</h3><p>기능의 책임과 데이터 관계를 먼저 정리하고 API와 데이터베이스를 설계합니다. 요청·응답 구조를 일관되게 맞추고, 기능이 바뀌어도 흐름을 이해하기 쉬운 코드를 지향합니다.</p><div class="competency-tech">Spring Boot · REST API · PostgreSQL · MySQL</div></div>
+    </article>
+    <article class="competency-card">
+      <div class="competency-visual image-visual"><img class="about-image-light" src="assets/about-performance-light.png" alt="응답 시간과 처리량을 비교하는 성능 지표 예시" loading="lazy"><img class="about-image-dark" src="assets/about-performance-dark.png" alt="응답 시간과 처리량을 비교하는 성능 지표 예시" loading="lazy"><span class="illustration-note">성능 지표 예시</span></div>
+      <div class="competency-copy"><span class="small-label">02 / PERFORMANCE OPTIMIZATION</span><h3>병목 분석과 성능 최적화</h3><p>응답 지연과 오류를 처리 단계별로 살펴보고, 조회 쿼리·인덱스·캐시·전송 구조에서 병목을 찾습니다. 문제에 맞는 해결책을 선택하고 개선 전후를 비교해 효과를 확인합니다.</p><div class="competency-tech">SQL · Index · Redis · 데이터 전송 최적화</div></div>
+    </article>
+    <article class="competency-card">
+      <div class="competency-visual image-visual"><img class="about-image-light" src="assets/about-integration-light.png" alt="실시간·AI·데이터 기능을 연결하는 검색 UI 예시" loading="lazy"><img class="about-image-dark" src="assets/about-integration-dark.png" alt="실시간·AI·데이터 기능을 연결하는 검색 UI 예시" loading="lazy"></div>
+      <div class="competency-copy"><span class="small-label">03 / SYSTEM INTEGRATION</span><h3>서비스 흐름을 잇는 시스템 연계</h3><p>실시간 메시지와 상태 동기화, AI 분석 결과와 데이터 검색을 서비스에 연결합니다. 시스템마다 다른 데이터 형식과 처리 순서를 조율하고, 프론트엔드와 API 구조를 맞춰 갑니다.</p><div class="competency-tech">WebSocket · WebRTC · AI 연동 · MyBatis</div></div>
+    </article>
+  </div>
+</section>
+
+    <section class="experience" id="experience" aria-labelledby="experience-title">
+  <div class="competency-heading"><span class="eyebrow">LEARNING & QUALIFICATIONS / 교육 및 자격</span><h2 id="experience-title">배움으로 기반을 다지고,<br>개발 경험으로 넓혀왔습니다.</h2></div>
+  <div class="education-layout">
+    <div class="education-intro"><span class="eyebrow">EDUCATION / 교육 및 학력</span><h3>배우고 만들어온 시간</h3><p>IT와 보안을 공부하고,<br>개발 교육과 팀 프로젝트를 통해<br>서비스를 만드는 경험을 쌓았습니다.</p></div>
+    <div class="education-timeline">
+      <article class="education-entry"><span class="education-period">2019.03 — 2025.02</span><h3>우송대학교 IT 융합학부</h3><p class="education-subtitle">스마트 IT 보안 전공</p><p>IT와 보안을 전공하며 개발자로서의 기반을 다졌습니다.</p></article>
+      <article class="education-entry"><span class="education-period">2023.03 — 2023.08</span><h3>우송비트 교육</h3><p>전공 학습과 함께 개발 교육 과정에 참여하며 학습 경험을 넓혔습니다.</p></article>
+      <article class="education-entry"><span class="education-period">2025.07 — 2026.06</span><h3>삼성청년 SW AI 아카데미 14기</h3><p>웹 서비스 개발과 팀 프로젝트를 통해 설계·구현·문제 해결 경험을 쌓았습니다.</p><div class="tags"><span>백엔드 개발</span><span>팀 협업</span><span>서비스 구현</span></div></article>
+    </div>
+  </div>
+  <div class="experience-divider qualification-divider"><span>자격증</span></div>
+  <div class="qualification-grid">
+    <article class="qualification-card"><time datetime="2026-10">2026.10</time><h3>DAsP</h3><p>데이터아키텍처 준전문가</p></article>
+    <article class="qualification-card"><time datetime="2026-03">2026.03</time><h3>ADsP</h3><p>데이터분석 준전문가</p></article>
+    <article class="qualification-card"><time datetime="2025-04">2025.04</time><h3>SQLD</h3><p>SQL 개발자</p></article>
+    <article class="qualification-card"><time datetime="2024-09">2024.09</time><h3>정보처리기사</h3><p>정보처리기사 자격</p></article>
+  </div>
+</section>
+
+<section class="contact" id="contact"><span class="eyebrow">03 / LET’S CONNECT</span><div class="contact-layout"><h2>좋은 서비스는,<br>좋은 대화에서<span>↗</span></h2><div><p>함께 해결하고 싶은 문제가 있나요?<br>새로운 이야기와 연결을 기다립니다.</p><div class="contact-links"><span>EMAIL <b>이메일을 설정해 주세요</b></span><span>GITHUB <b>GitHub 주소를 설정해 주세요</b></span></div><p class="contact-help">script.js의 profile 설정에 연락처를 입력하면 링크가 활성화됩니다.</p></div></div><footer><a class="logo" href="#home">dev<span>folio.</span></a><span>© <span id="year">2026</span> <span id="footer-name">Backend Portfolio</span></span><a href="#home">BACK TO TOP ↑</a></footer></section>
+  </main>
+  <dialog id="project-dialog" aria-labelledby="dialog-title"><div class="dialog-top"><span class="eyebrow">PROJECT NOTES</span><button id="close-dialog" aria-label="프로젝트 상세 닫기">×</button></div><h2 id="dialog-title"></h2><p class="dialog-note">디자인 확인용 예시입니다. 실제 프로젝트 내용으로 교체해 주세요.</p><div class="detail-layout"><div id="dialog-content" tabindex="-1"></div><nav class="detail-nav" aria-label="프로젝트 상세 목차"><span class="small-label">CONTENTS</span><button data-section="overview" aria-current="page"><span>01</span> 프로젝트 개요</button><button data-section="role"><span>02</span> 역할</button><button data-section="trouble"><span>03</span> 트러블슈팅</button><button data-section="architecture"><span>04</span> 프로젝트 아키텍처</button><button data-section="database"><span>05</span> DB 구조</button></nav></div></dialog>
+<dialog id="image-viewer" aria-labelledby="viewer-title"><div class="viewer-toolbar"><h2 id="viewer-title">이미지 확대 보기</h2><div><button id="zoom-out" aria-label="이미지 축소">−</button><span id="zoom-level" aria-live="polite">100%</span><button id="zoom-in" aria-label="이미지 확대">＋</button><button id="zoom-reset">맞춤</button><button id="viewer-close" aria-label="이미지 확대 보기 닫기">×</button></div></div><div class="viewer-canvas" tabindex="0" aria-label="확대한 이미지, 스크롤하여 이동"><img id="viewer-image" alt=""></div></dialog>
+</body>
+</html>
